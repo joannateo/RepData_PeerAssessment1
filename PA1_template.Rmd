@@ -8,10 +8,10 @@ opts_chunk$set(echo=TRUE, results='asis')
 
 title: "Reproducible Research: Peer Assessment 1"
 output: 
-  html_document:
-    keep_md: true
+html_document:
+keep_md: true
     
-    
+---
 ## Loading and preprocessing the data
 
 Read in the data.

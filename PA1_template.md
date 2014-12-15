@@ -69,7 +69,7 @@ qplot(total.steps, xlab = "Total steps", ylab = "Frequency")
 ## stat_bin: binwidth defaulted to range/30. Use 'binwidth = x' to adjust this.
 ```
 
-![plot of chunk histogram](figure/histogram.png) 
+![plot of chunk histogram](figures/repdata-016-proj1-histogram.png) 
 
 
 
@@ -91,7 +91,7 @@ ggplot(daily.pattern, aes(time, mean.steps)) + geom_line() + xlab("Time of day")
     ylab("Mean number of steps") + scale_x_datetime(labels = date_format(format = "%H:%M"))
 ```
 
-![plot of chunk timeseriesplot](figure/timeseriesplot.png) 
+![plot of chunk timeseriesplot](figures/repdata-016-proj1-timeseries_daytype.png) 
 
 
 Which five minute interval has the highest mean number of steps?
@@ -164,7 +164,7 @@ qplot(total.steps.imputed, xlab = "Total steps", ylab = "Frequency")
 ## stat_bin: binwidth defaulted to range/30. Use 'binwidth = x' to adjust this.
 ```
 
-![plot of chunk histogram_imputed](figure/histogram_imputed.png) 
+![plot of chunk histogram_imputed](figures/repdata-016-proj1-histogram_imputed.png) 
 
 
 Imputing the missing data has increased the average number of steps. 
@@ -205,5 +205,5 @@ ggplot(day.type.pattern, aes(time, mean.steps)) + geom_line() + xlab("Time of da
     facet_grid(. ~ day.type)
 ```
 
-![plot of chunk timeseries_daytype](figure/timeseries_daytype.png) 
+![plot of chunk timeseries_daytype](figures/repdata-016-proj1-timeseriesplot.png) 
 
